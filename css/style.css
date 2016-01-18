@@ -1,0 +1,111 @@
+.star {
+	font-family: sans-serif;
+	color: #00ffff;
+	background-color: #000000;
+	background-image: url("../graphics/Stars3.jpg");
+    background-position: left top;
+	background-attachment: fixed;
+}
+.big {
+	font-size: 175%;
+}
+.button {
+	position: absolute;
+    top: 25%;
+    left: 50%;
+    margin-right: -50%;
+    width:670px;
+    transform: translate(-50%,-50%)
+
+}
+a {
+	background-color: inherit;
+}
+a:link {
+    color:#0096d6;
+}
+
+/* visited link */
+a:visited {
+    color: #36ba55;
+}
+
+/* mouse over link */
+a:hover {
+    color:#603cb4;
+}
+
+/* selected link */
+a:active {
+    color: #c72929;
+}
+.center {
+	text-align: center;
+}
+div {
+	border-style: none;
+}
+img {
+	border-style: none;
+}
+body>div#hidden {
+	position: fixed;
+}
+div#navbar {
+	outline-color: #696969;
+	outline-style: solid;
+	position: fixed;
+	float: left;
+	top: 13%;
+}
+
+div#hidden {
+	top: 5px;
+	left: 5px;
+	width: 100px;
+	font-size: 90%;
+}
+
+div#main {
+	position: relative;
+	top: 5px;
+	left:118px;
+	min-width: 685px;
+}
+ul#navlinks {
+	list-style-type: none;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+	
+table,th,td,tr {
+	border-style: solid;
+	border-color: #ffffff;
+	border-width: 1px;
+}
+.body {
+	background-color: #f5f5f5;
+	white-space:nowrap;
+	margin-left: 5px;
+}
+div#topbar {
+	outline-color: #696969;
+	outline-style: solid;
+	position: fixed;
+	float: left;
+	top: 1px;
+	left: 0px;
+	width: 100%;
+	font-size: 100%;
+	list-style-type: none;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}

@@ -52,6 +52,7 @@ body>div#hidden {
 	position: fixed;
 }
 div#navbar {
+	background-color: #F5F5E9;
 	outline-color: #696969;
 	outline-style: solid;
 	position: fixed;

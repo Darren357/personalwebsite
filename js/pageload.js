@@ -1,9 +1,10 @@
 /*
 Author: Robert Hashemian
 http://www.hashemian.com/
-
 You can use this code in any manner so long as the author's
-name, Web address and this disclaimer is kept intact. */
+name, Web address and this disclaimer is kept intact. 
+<span id="display_here"></span>
+*/
 dt=new Date();
 document.onreadystatechange=function() {
   if (document.readyState=="complete") {

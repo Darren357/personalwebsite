@@ -1,35 +1,47 @@
 <!DOCTYPE html>
-<html>
-<!-- I'm glad you're looking here, go ahead and run me through the w3 validator.
-I used some of the PFRC MTU page's stuff as a base. http://pfrc.students.mtu.edu/ -->
-<head>
-	<script>
-PLT_DisplayFormat = "It took %%S%% seconds to load this page.";
+<html lang="en">
+    <head>
+    <script>
+PLT_DisplayFormat = "%%S%%";
 PLT_BackColor = "f5f5f5"
-PLT_ForeColor = "black";
-PLT_FontPix = "16";
+PLT_ForeColor = "333333";
+PLT_FontPix = "14";
 PLT_DisplayElementID = "display_here";
 </script>
-<script src="js/pageload.js"></script>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--content="width=700">-->
+    <script type="text/javascript" src="js/pageload.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Darren McCaul">
+    <link rel="shortcut icon" href="graphics/favicon.ico">
+
     <title>Darren</title>
-    <!-- Hide this line for IE (needed for Firefox and others) -->
-	<!--[if !IE]-->
-	<link rel="icon" href="graphics/favicon.png" type="image/x-icon" />
-	<!--[endif]-->
-	<!-- This is needed for IE -->
-	<link rel="shortcut icon" href="graphics/favicon.ico" type="image/ico" />
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="css/navbar.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
-	<script type="text/javascript" src="js/script.js"></script>
-</head>
-<body class="body">
-<!--Here are the links to the graphics.-->
-<a href="/graphics/attribute.txt"></a>
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="./css/navbar.css" rel="stylesheet">
 
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  <style type="text/css">:root #content > #right > .dose > .dosesingle,
+:root #content > #center > .dose > .dosesingle
+{display:none !important;}</style></head>
 
+  <body>
+    <div class="container wrapper">
+
+		<div class="Darrentop">
+    <strong>Darren McCaul, Mechanical Engineering Student, CS hobbyist.</strong>
+    <div class="pull-right">
+        <img src="./graphics/favicon.png" width="70" alt="My Custom Logo.">
+    </div>
+</div>
+
+<!-- Static navbar -->
 <div class="navbar navbar-default">
     <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -37,103 +49,51 @@ PLT_DisplayElementID = "display_here";
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="/">Darren McCaul</a>
+        <a class="navbar-brand" href="#">Home</a>
     </div>
-    <div class="navbar-collapse in" style="height: auto;">
+    <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-            <li><a href="http://lug.mtu.edu/">Home</a></li>
-            <li><a href="http://lug.mtu.edu/wiki/Members#Officers">Members</a></li>
-            <li><a href="https://drive.google.com/a/mtu.edu/folderview?id=0Bx_Tmd32ygk3fmFybTVGLXhDLXBkQVM0SHFQR3NXLUp0MGNhMHk0akY5UXVNTG9waGM1eFU" target="_blank">Minutes</a></li>
-            <li><a href="constitution.html">Constitution</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Darren_Resume.pdf" target="_blank">Résumé</a></li>
             <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Distribution Mirrors <b class="caret"></b></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">About<b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                    <li><a href="/archlinux/">Arch Linux</a></li>
-                    <li><a href="/centos/">CentOS</a></li>
-                    <li><a href="/cygwin/">Cygwin</a></li>
-                    <li><a href="/debian/">Debian</a></li>
-                    <li><a href="/fedora/linux/">Fedora</a></li>
-                    <li><a href="/epel/">Fedora EPEL</a></li>
-                    <li><a href="/gentoo/">Gentoo</a></li>
-                    <li><a href="/gentoo-portage/">Gentoo Portage</a></li>
-                    <li><a href="/gobolinux/">Gobolinux</a></li>
-                    <li><a href="/kernel/">kernel.org</a></li>
-                    <li><a href="/manjaro/">Manjaro Linux</a></li>
-                    <li><a href="/opensuse/opensuse/">OpenSUSE</a></li>
-                    <li><a href="/parrot/">Parrot Sec</a></li>
-                    <li><a href="/raspbian/">Raspbian</a></li>
-                    <li><a href="/rpmfusion/">RPM Fusion</a></li>
-                    <li><a href="/slackware/">Slackware</a></li>
-                    <li><a href="/tails/">Tails</a></li>
-                    <li><a href="/ubuntu/">Ubuntu</a></li>
+                    <li><a href="about.html">Me</a></li>
+                    <li><a href="backend.html">This Site</a></li>
                 </ul>
-            </li>
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">ISO Mirrors <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                    <li><a href="/archlinux/iso/latest/">Arch Linux</a></li>
-                    <li><a href="/debian-cd/">Debian</a></li>
-                    <li><a href="/fedora/linux/releases/">Fedora</a></li>
-                    <li><a href="/gentoo/releases/">Gentoo</a></li>
-                    <li><a href="/gobolinux/">Gobolinux</a></li>
-                    <!-- <li><a href="/NetBSD/iso/">NetBSD</a></li> -->
-                    <li><a href="/tails/stable/">Tails</a></li>
-                    <li><a href="/ubuntu-iso">Ubuntu</a></li>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                    <li><a href="use.html">How to Use</a></li>
-                    <!-- <li><a href="http://goo.gl/forms/gNlSsVFLP4">Request a Mirror</a></li> -->
-                </ul>
-            </li>
+            </li> 
+            
         </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="irc://lug.mtu.edu:6667/#mtu">IRC #mtu</a></li>
-            <li><a href="https://groups.google.com/a/mtu.edu/forum/#!forum/lug-l">Email List</a></li>
-            <li><a href="mailto:lug-server-admins-l@mtu.edu">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </div><!--/.nav-collapse -->
 </div>
+			<div class="well">
+				<h3>A Website</h3>
+					<p>I accidentally a website.</p>
+					<h3>Reasoning</h3>
+					<ul>
+						<li><h4>It is free.</h4></li>
+                        <li><h4>My resume now has a catchy website.</h4></li>
+                        <li><h4>That High School web design class was put to use.</h4></li>
+                        <li><h4>There's a pun intended with the title.</h4></li>
+					</ul> 
+				</div>
 
-<!-- <div id="hidden">
-	<div id="navbar">
-	<ul id="navlinks">
-<li><a href="#">Back to top.</a></li>
-<li style="color:#FF6200">Home</li>
-<li><a href="about.html">About me.</a></li>
-<li><a href="resume.html">My resume.</a></li>
-<li><a href="school.html">My schooling.</a></li>
-<li><a href="contact.html">How to contact me.</a></li>
-	</ul>
-	</div>
-</div>
--->
-<div id="main">
-<h1 class="center">There'll be stuff here later, I have homework.</h1>
 
-<p class="center"><span id="display_here"></span> There have been
-	<!-- Start of StatCounter Code for Default Guide -->
-<script type="text/javascript">
-var sc_project=10785866; 
-var sc_invisible=0; 
-var sc_security="2a65cb82"; 
-var sc_text=2; 
-var scJsHost = (("https:" == document.location.protocol) ?
-"https://secure." : "http://www.");
-document.write("<sc"+"ript type='text/javascript' src='" +
-scJsHost+
-"statcounter.com/counter/counter.js'></"+"script>");
-</script>
-<!-- End of StatCounter Code for Default Guide -->
-unique visitors to this site.
-</p>
 </div>
+ <div class="push"></div>
+</div>
+
+
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="./test_files/jquery.min.js"></script>
+    <script src="./test_files/bootstrap.min.js"></script>  
+    <div class="bottombar footer">
+    Darren McCaul 2016 | It took <span id="display_here"></span> seconds to load this page. | <a href="">Top</a>
+    </div>
 </body>
 </html>

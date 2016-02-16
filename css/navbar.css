@@ -28,3 +28,15 @@ html, body {
 .footer, .push {
 	height: 42px; /* .push must be the same height as .footer */
 }
+  #sidebar.affix-top {
+    position: static;
+    margin-top:30px;
+    width:228px;
+  }
+
+  #sidebar.affix {
+    position: fixed;
+    top:70px;
+    width:228px;
+  }
+

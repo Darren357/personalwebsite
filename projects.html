@@ -8,6 +8,8 @@ PLT_ForeColor = "333333";
 PLT_FontPix = "14";
 PLT_DisplayElementID = "display_here";
 </script>
+    <link href="./css/navbar.css" rel="stylesheet">
+    <link href="./css/bootstrap.css" rel="stylesheet">
     <script type="text/javascript" src="js/pageload.js"></script>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
@@ -15,13 +17,8 @@ PLT_DisplayElementID = "display_here";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Darren McCaul">
     <link rel="shortcut icon" href="graphics/favicon.ico">
-
     <title>Darren</title>
-    <!-- Bootstrap core CSS -->
-    <link href="./css/bootstrap.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
-    <link href="./css/navbar.css" rel="stylesheet">
-
+  
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
@@ -33,12 +30,12 @@ PLT_DisplayElementID = "display_here";
 
   <body>
   
-    <div class="container wrapper" style="margin-left: 120px">
+    <div class="container wrapper" style="padding-left:135px;align-items: center;">
 
 		<div class="Darrentop">
-    <strong>Darren McCaul, Mechanical Engineering Student, CS hobbyist.</strong>
+    <strong>Darren McCaul, Mechanical Engineering Student.</strong>
     <div class="pull-right">
-        <img src="./graphics/favicon.png" width="70" alt="My Custom Logo.">
+        <img src="./graphics/favicon.png" style="width: 70px;"  alt="My Custom Logo.">
     </div>
 </div>
 
@@ -50,7 +47,7 @@ PLT_DisplayElementID = "display_here";
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Whoops</a>
+        <a class="navbar-brand" href="#">Projects</a>
     </div>
     <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
@@ -78,28 +75,85 @@ PLT_DisplayElementID = "display_here";
     </div><!--/.nav-collapse -->
 </div>
 			
+<!--The Main Blocks  -->
+
+                <div name="page" class="well">
+                <h3>This Page</h3>
+                    <p>The CSS magic needed to make this page function properly is still taking some time to complete. The floating sidebar used to make the right edge of the screen occasionally flow over the width of the browser. 
+                    <br/>CSS collapse things aren't easy to dynamically resize to keep aspect ratio.</p>
+                </div>
 
                 <div name="rad" class="well">
                 <h3>Radian Clock</h3>
                     <p>I made this as a spur of the moment thing. I have a presentation of it, but I keep forgetting to upload the file in a nice format.</p>
+                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demorad">Gallery</button>
+                <div id="demorad" class="collapse">
+
+<iframe class="imgur-album" width="100%" height="550" frameborder="0" src="//imgur.com/a/SRkQY/embed"></iframe>
+          <!--  <blockquote class="imgur-embed-pub" lang="en" data-id="a/Pgkfk"><a href="http://imgur.com/a/Pgkfk">Slide Whistle</a></blockquote><script async src="http://s.imgur.com/min/embed.js" charset="utf-8"></script> -->
                 </div>
+
+                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demoradmp4">Video</button>
+                <div id="demoradmp4" class="collapse">
+                <p>Don't mind the elevator's ding.</p>
+                <div class="scalable scalable-16-9 scalable-content" style="box-sizing: border-box;">
+                <iframe src="https://drive.google.com/a/mtu.edu/file/d/0B5uK2vdHGZxYX05uSmxfQWRMLTQ/preview"></iframe>
+                </div>
+                </div>
+                </div>
+
+
 
                 <div name="hack" class="well">
                 <h3>Hack Button</h3>
                     <p>This is how I won the category "Most Extravagantly Useless" at MLH Local Hack Day 2015. I borrowed an Arduino Mini from a friend, and I made it send a spacebar when two pins were connected. It was called a "hack" button because I had it connected to a laptop with <a href="http://www.hackertyper.net">Hacker Typer</a> on the screen.</p>
+                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demohack">Gallery</button>
+                <div id="demohack" class="collapse">
+        <iframe class="imgur-album" width="100%" height="550" frameborder="0" src="//imgur.com/a/5Appf/embed"></iframe>
                 </div>
 
- <div class="push"></div>
-</div>
- <div id="sidebar" class="affix" style="; margin-top: 116px;background-color: #f5f5f5; max-width: 130px; border-radius: 5px">
+                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demohackmp4">Video</button>
+                <div id="demohackmp4" class="collapse">
+                <div class="scalable scalable-16-9 scalable-content">
+                <iframe src="https://drive.google.com/a/mtu.edu/file/d/0B5uK2vdHGZxYZW5OT3EwOGl0Vmc/preview"></iframe>
+                </div>
+                </div>
+
+                </div>
+
+                <div name="theremin" class="well">
+                <h3>Theremin</h3>
+                    <p>This project is ongoing, but I keep running into trouble with it. My LC tank circuits don't oscillate at all, which is how a theremin works.</p>
+                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demotheremin">Gallery</button>
+                <div id="demotheremin" class="collapse">
+        <iframe class="imgur-album" width="100%" height="550" frameborder="0" src="//imgur.com/a/b2sul/embed"></iframe>
+                </div>
+                </div>
+
+                <div name="whistle" class="well">
+                <h3>Electronic Trombone</h3>
+                    <p>I was going to enter my theremin into a small design competition, but the project hadn't even left the ground. I then compromised and put a 555 timer on a breadboard with a slide potentiometer and a peizo disk.</p>
+                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demoslide">Gallery</button>
+                <div id="demoslide" class="collapse">
+        <iframe class="imgur-album" width="100%" height="550" frameborder="0" src="//imgur.com/a/wFI9q/embed"></iframe>
+                </div>
+                </div>
+    </div>
+
+<!-- Sidebar -->
+ <div id="sidebar" class="affix" style="; margin-top: 116px;background-color: #f5f5f5; max-width: 130px; border-radius: 6px;border-top-left-radius: 0px;border-bottom-left-radius: 0px;">
                 <h3>Index</h3>
                     <p><ul>
                     <li><a href="#Top">Top</a></li>
                     <li><a href="#rad">Radian Clock</a></li>
+                    <li><a href="#page">This Page</a></li>
                     <li><a href="#hack">Hack Button</a></li>
+                    <li><a href="#theremin">Theremin</a></li>
+                    <li><a href="#whistle">Electronic Trombone</a></li>
                     </ul></p>
                 </div>
-
+<!-- The Bottom Stuff -->
+ <div class="push"></div>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

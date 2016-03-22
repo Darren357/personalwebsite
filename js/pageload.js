@@ -5,6 +5,11 @@ You can use this code in any manner so long as the author's
 name, Web address and this disclaimer is kept intact. 
 <span id="display_here"></span>
 */
+PLT_DisplayFormat = "%%S%%";
+PLT_BackColor = "f5f5f5"
+PLT_ForeColor = "333333";
+PLT_FontPix = "14";
+PLT_DisplayElementID = "display_here";
 dt=new Date();
 document.onreadystatechange=function() {
   if (document.readyState=="complete") {
